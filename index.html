@@ -1,12 +1,221 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+</head>
 
-  </body>
+<body>
+
+<header class="page-header container">
+
+  <nav class="main-nav">
+
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item--current">Главная</li>
+      <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+      <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+      <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+    </ul>
+    <div class="page-header__logo">
+      <span>
+        <img class="page-header__logo-image" src="" width="" height="" alt="логотип"/>
+      </span>
+    </div>
+
+    <button class="main-nav__button visually-hidden">
+      <span class="main-nav__toggler">
+        <img class="main-nav__toggler-image" src="" width="" height="" alt="гамбургер"/>
+      </span>
+    </button>
+
+    <button class="main-nav__button visually-hidden">
+      <span class="main-nav__cross">
+        <img class="main-nav__cross-image" src="" width="" height="" alt="крестик"/>
+      </span>
+    </button>
+  </nav>
+
+</header>
+
+<main class="container page-main">
+
+  <div class="main-promo">
+    <div class="main-promo__welcome">
+      <img class="main-promo__welcome-image" src="" width="" height="" alt="welcome"/>
+    </div>
+  </div>
+
+  <section class="main-head">
+
+    <h1 class="main-head__caption">Седона - небольшой
+      городок в Аризоне,
+      заслуживающий большего!</h1>
+    <p class="main-head__preview">
+      Рассмотрим 5 причин, по которым
+      Седона круче чем Гранд Каньон!
+    </p>
+
+  </section>
+
+  <div class="main-reason reason-container">
+
+    <section class="main-reason__decoration main-reason__decoration--color">
+
+      <h2 class="main-reason__caption">Настоящий городок</h2>
+      <p class="main-reason__roster">- №1 -</p>
+      <p class="main-reason__text">Седона не аттракцион
+        для туристов, там течет
+        своя жизнь</p>
+
+    </section>
+
+    <div class="main-reason__photo reason-container__photo">
+      <img class="main-reason__photo-image" src="" width="" height="" alt="фото города"/>
+    </div>
+  </div>
+
+  <div class="tourist-container">
+
+    <section class="main-tourist">
+
+      <div class="main-tourist__icon main-tourist__icon--housing">
+        <img class="main-tourist__icon-image" src="" width="" height="" alt="жилье"/>
+      </div>
+
+      <h3 class="main-tourist__caption">Жилье</h3>
+      <p class="main-tourist__text">
+        Рекомендуем пожить в
+        настоящем мотеле,
+        все как в кино!
+      </p>
+
+    </section>
+
+    <section class="main-tourist">
+
+      <div class="main-tourist__icon main-tourist__icon--souvenirs">
+        <img class="main-tourist__icon-image" src="" width="" height="" alt="сувенир"/>
+      </div>
+
+      <h3 class="main-tourist__caption">Сувениры</h3>
+      <p class="main-tourist__text">
+        Не только китайского,
+        но и местного
+        производства!
+      </p>
+
+    </section>
+
+    <section class="main-tourist">
+
+      <div class="main-tourist__icon main-tourist__icon--food">
+        <img class="main-tourist__icon-image" src="" width="" height="" alt="еда"/>
+      </div>
+
+      <h3 class="main-tourist__caption">Еда</h3>
+      <p class="main-tourist__text">
+        Всегда заказывайте
+        фирменный бургер,
+        вы не разочаруетесь!
+      </p>
+    </section>
+
+  </div>
+
+  <div class="main-reason reason-container">
+
+    <div class="main-reason__photo reason-container__photo">
+      <img class="main-reason__photo-image" src="" width="" height="" alt="мост дьявола"/>
+    </div>
+
+    <section class="main-reason__decoration main-reason__decoration--color">
+      <h2 class="main-reason__caption">Там есть мост дьявола</h2>
+      <p class="main-reason__roster">- №2 -</p>
+      <p class="main-reason__text">Да, по нему можно
+        пройти! Если вы осмелитесь,
+        конечно</p>
+
+    </section>
+
+  </div>
+
+  <div class="main-reason reason-container">
+    <section class="main-reason__decoration">
+
+      <h2 class="main-reason__caption">Небольшая площадь</h2>
+      <p class="main-reason__roster">- №3 -</p>
+      <p class="main-reason__text">Все интересные места
+        находятся очень близко</p>
+
+    </section>
+
+    <section class="main-reason__decoration">
+
+      <h2 class="main-reason__caption">Красивая дорога</h2>
+      <p class="main-reason__roster">- №4 -</p>
+      <p class="main-reason__text">Ехать в Седону из
+        Лас-Вегаса совсем
+        не скучно!</p>
+
+    </section>
+
+    <section class="main-reason__decoration">
+
+      <h2 class="main-reason__caption">Мало туристов</h2>
+      <p class="main-reason__roster">- №5 -</p>
+      <p class="main-reason__text">Большинство едет в
+        Гранд Каньон и
+        толпится там</p>
+
+    </section>
+
+  </div>
+
+  <section class="hotel-interest">
+
+    <h4 class="hotel-interest__caption">Заинтересовались?</h4>
+    <p>Укажите предполагаемые даты поездки,
+      и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <button class="hotel-interest__button">Найти гостиницу</button>
+
+  </section>
+
+  <div class="map">
+  </div>
+
+</main>
+
+<footer class="page-footer container">
+
+  <h5 class="page-footer__hashtag">#VISITSEDONA</h5>
+
+  <div class="social-links">
+    <a class="social-links__twitter" href="">
+      <svg class="social-links__twitter-image">Твиттер
+      </svg>
+    </a>
+    <a class="social-links__facebook" href="">
+      <svg class="social-links__facebook-image">Фейсбук
+      </svg>
+    </a>
+    <a class="social-links__youtube" href="">
+      <svg class="social-links__youtube-image">Иконка ютуба
+      </svg>
+    </a>
+  </div>
+
+  <div class="footer-copyright">
+    <p class="footer-copyright__text">Разработано</p>
+    <a class="footer-copyright__link" href="https://up.htmlacademy.ru/adaptive/12">
+      <svg class="footer-copyright__link-image">Логотип академии
+      </svg>
+    </a>
+  </div>
+</footer>
+
+</body>
+
 </html>
