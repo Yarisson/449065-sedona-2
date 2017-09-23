@@ -8,150 +8,188 @@
 </head>
 
 <body>
+
 <header class="page-header container">
+
   <nav class="main-nav">
+
     <ul class="main-nav__list">
       <li class="main-nav__item"><a href="index.html">Главная</a></li>
       <li class="main-nav__item main-nav__item--current">Фото и видео</li>
       <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
       <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
     </ul>
+
     <div class="page-header__logo ">
-      <a href="index.html"><img src="" width="" height="" alt="логотип"/></a>
+      <a href="index.html">
+        <img class="page-header__logo-image" src="" width="" height="" alt="логотип"/>
+      </a>
     </div>
 
-    <button class="main-nav__button visually-hidden"><span class="main-nav--toggler"><img src="" width="" height=""
-                                                                                          alt="гамбургер"/></span>
+    <button class="main-nav__button visually-hidden">
+      <span class="main-nav__toggler">
+        <img class="main-nav__toggler-image" src="" width="" height="" alt="гамбургер"/>
+      </span>
     </button>
-    <button class="main-nav__button visually-hidden"><span class="main-nav--cross"><img src="" width="" height=""
-                                                                                        alt="крестик"/></span></button>
+
+    <button class="main-nav__button visually-hidden">
+      <span class="main-nav__cross">
+        <img class="main-nav__cross-image" src="" width="" height="" alt="крестик"/>
+      </span>
+    </button>
+
   </nav>
 
 </header>
 
-<main class="container main-photo">
+<main class="container page-photo">
 
   <div class="main-promo-photo">
-    <div class="main-promo-photo__Sedona"><img src="" width="" height="" alt="Седона"/>
+    <div class="main-promo-photo__text">
+      <img class="main-promo-photo__text-image" src="" width="" height="" alt="Седона"/>
     </div>
   </div>
 
   <section class="main-photo-head">
 
-    <h2 class="main-photo-head--caption">Фото и видео</h2>
-
-    <p>Не можете решиться на путешествие
+    <h2 class="main-photo-head__caption">Фото и видео</h2>
+    <p class="main-photo-head__text">Не можете решиться на путешествие
       из-за курса? Фотографии помогут
       вам забыть о политике и экономике</p>
 
   </section>
 
-  <div class="main-photogallery container">
-    <article class="vastnesses-container">
-      <div class="main-photogallery__picture main-photogallery__vastnesses">
-        <img src="" width="" height="" alt="Неродные просторы"/>
+  <div class="photogallery-list photogallery-container">
 
+    <article class="photogallery-list__unit photogallery-item">
+
+      <div class="photogallery-item__photo">
+        <img class="photogallery-item__photo-image" src="" width="" height="" alt="Неродные просторы"/>
       </div>
-      <h3 class="main-photogallery__caption">Нeродные просторы</h3>
-      <p class="main-photogallery__author">Автор фото: Борис</p>
-      <div class="main-photogallery__like"><img src="" width="" height="" alt="лайк"/>
-        <p>1350</p>
+
+      <h3 class="photogallery-item__caption">Нeродные просторы</h3>
+      <p class="photogallery-item__author">Автор фото: Борис</p>
+      <div class="photogallery-item__like"><img class="photogallery-item__like-icon" src="" width="" height=""
+                                                alt="лайк"/>
+        <p class="photogallery-item__like-text">1350</p>
       </div>
+
     </article>
 
-    <article class="vegetation-container">
-      <div class="main-photogallery__picture main-photogallery__vegetation">
-        <img src="" width="" height="" alt="Местная растительность"/>
+    <article class="photogallery-list__unit photogallery-item">
 
+      <div class="photogallery-item__photo">
+        <img class="photogallery-item__photo-image" src="" width="" height="" alt="Местная растительность"/>
       </div>
 
-      <h3 class="main-photogallery__caption">Местная растительность</h3>
-      <p class="main-photogallery__author">Автор фото: Сергей</p>
-      <div class="main-photogallery__like"><img src="" width="" height="" alt="лайк"/>
-        <p>143</p>
+      <h3 class="photogallery-item__caption">Местная растительность</h3>
+      <p class="photogallery-item__author">Автор фото: Сергей</p>
+      <div class="photogallery-item__like"><img class="photogallery-item__like-icon" src="" width="" height=""
+                                                alt="лайк"/>
+        <p class="photogallery-item__like-text">143</p>
       </div>
+
     </article>
 
-    <article class="north-road-container">
-      <div class="main-photogallery__picture main-photogallery__north-road">
-        <img src="" width="" height="" alt="Дорога на север"/>
+    <article class="photogallery-list__unit photogallery-item">
 
+      <div class="photogallery-item__photo">
+        <img class="photogallery-item__photo-image" src="" width="" height="" alt="Дорога на север"/>
       </div>
 
-      <h3 class="main-photogallery__caption">Дорога на север</h3>
-      <p class="main-photogallery__author">Автор фото: Петр</p>
-      <div class="main-photogallery__like"><img src="" width="" height="" alt="лайк"/>
-        <p>96</p>
+      <h3 class="photogallery-item__caption">Дорога на север</h3>
+      <p class="photogallery-item__author">Автор фото: Петр</p>
+      <div class="photogallery-item__like"><img class="photogallery-item__like-icon" src="" width="" height=""
+                                                alt="лайк"/>
+        <p class="photogallery-item__like-text">96</p>
       </div>
+
     </article>
 
-    <article class="diablo-bridge-container">
-      <div class="main-photogallery__picture main-photogallery__diablo-bridge">
-        <img src="" width="" height="" alt="Мост дьявола"/>
+    <article class="photogallery-list__unit photogallery-item">
 
+      <div class="photogallery-item__photo">
+        <img class="photogallery-item__photo-image" src="" width="" height="" alt="Мост дьявола"/>
       </div>
 
-      <h3 class="main-photogallery__caption">Мост Дьявола</h3>
-      <p class="main-photogallery__author">Автор фото: Антон</p>
-      <div class="main-photogallery__like"><img src="" width="" height="" alt="лайк"/>
-        <p>254</p>
+      <h3 class="photogallery-item__caption">Мост Дьявола</h3>
+      <p class="photogallery-item__author">Автор фото: Антон</p>
+      <div class="photogallery-item__like"><img class="photogallery-item__like-icon" src="" width="" height=""
+                                                alt="лайк"/>
+        <p class="photogallery-item__like-text">254</p>
       </div>
+
     </article>
+
   </div>
 
   <section class="photo-doubt">
+
     <h4 class="photo-doubt__caption">Все еще сомневаетесь?</h4>
-    <p>Смотрите видеопрезентацию и
+    <p class="photo-doubt__text">Смотрите видеопрезентацию и
       скорее за билетами, пока они не
       подорожали в очередной раз!</p>
+
   </section>
 
   <div class="video-presentation presentation-container">
-    <div class="video-presentation__picture"><img src="" width="" height="" alt="Видео презентация"></div>
+
+    <div class="video-presentation__picture">
+      <img class="video-presentation__picture-image" src="" width="" height="" alt="Видео презентация">
+    </div>
+
     <div class="video-presentation__range">
       <div class="video-presentation__scale">
       </div>
     </div>
+
     <div class="video-presentation__range-toggle">
     </div>
-    <button class="video-presentation__repeat">
-      <svg>повторить</svg>
-    </button>
-    <button class="video-presentation__buttons">
-      <svg>кнопочки</svg>
-    </button>
-  </div>
 
+    <button class="video-presentation__repeat">
+      <svg class="video-presentation__repeat-icon">повторить</svg>
+    </button>
+
+    <button class="video-presentation__buttons">
+      <svg class="video-presentation__buttons-icon">кнопочки</svg>
+    </button>
+
+  </div>
 
 </main>
 
-
 <footer class="page-footer container">
+
   <h5 class="page-footer__hashtag">#VISITSEDONA</h5>
 
   <div class="social-links">
-    <a class="social-links--twitter" href="">
-      <svg>Твиттер
+
+    <a class="social-links__twitter" href="">
+      <svg class="social-links__twitter-image">Твиттер
       </svg>
     </a>
-    <a class="social-links--facebook" href="">
-      <svg>Фейсбук
+    <a class="social-links__facebook" href="">
+      <svg class="social-links__facebook-image">Фейсбук
       </svg>
     </a>
-    <a class="social-links--youtube" href="">
-      <svg>Иконка ютуба
+    <a class="social-links__youtube" href="">
+      <svg class="social-links__youtube-image">Иконка ютуба
       </svg>
     </a>
   </div>
 
   <div class="footer-copyright">
-    <p class="footer-copyright__website">Разработано</p>
-    <a class="footer-copyright--academy" href="https://up.htmlacademy.ru/adaptive/12">
-      <svg>Логотип академии
+
+    <p class="footer-copyright__text">Разработано</p>
+    <a class="footer-copyright__link" href="https://up.htmlacademy.ru/adaptive/12">
+      <svg class="footer-copyright__link-image">Логотип академии
       </svg>
     </a>
+
   </div>
+
 </footer>
 
 </body>
+
 </html>
