@@ -1,17 +1,18 @@
 .main-reason {
+  width: 320px;
+  margin: 0;
+  padding: 0;
   background-color: @white-color;
   border: 1px solid red;
 
   &__decoration {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 20px;
     text-align: center;
     color: @black-color;
     background-color: @decoration-background;
 
     &--color {
-      padding-top: 26px;
-      padding-bottom: 26px;
+      padding: 26px;
       color: @white-color;
       background-color: @navigation-color;
     }
@@ -34,12 +35,87 @@
   }
 
   &__text {
-    padding-left: 30px;
-    padding-right: 30px;
     font-style: normal;
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-reason {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 768px;
+    min-height: 256px;
+    margin: 0;
+    padding: 0;
+    background-color: @white-color;
+    border: 1px solid red;
+
+      &__decoration {
+        width: 256px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        color: @black-color;
+        background-color: @decoration-background;
+
+        &--color {
+          padding: 26px;
+          color: @white-color;
+          background-color: @navigation-color;
+      }
+    }
+
+    &__image-wrapper {
+      width: 512px;
+      height: 256px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-reason {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+    min-height: 256px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+    background-color: @white-color;
+    border: 1px solid red;
+
+      &__decoration {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        color: @black-color;
+        background-color: @decoration-background;
+
+        &--color {
+          padding: 26px;
+          color: @white-color;
+          background-color: @navigation-color;
+      }
+    }
+
+    &__image-wrapper {
+      width: 800px;
+      height: 256px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
   }
 }

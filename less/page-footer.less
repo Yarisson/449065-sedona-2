@@ -1,4 +1,6 @@
 .page-footer {
+  margin: 0;
+  padding: 20px;
   color: @black-color;
   background-color: @footer-color;
 
@@ -10,4 +12,31 @@
     text-align: center;
     text-transform: uppercase;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 120px;
+    margin: 0;
+    padding: 20px;
+    color: @black-color;
+    background-color: @footer-color;
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 120px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    color: @black-color;
+    background-color: @footer-color;
 }

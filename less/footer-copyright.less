@@ -1,5 +1,6 @@
 .footer-copyright {
-  padding-bottom: 15px;
+  margin: 0;
+  padding-bottom: 5px;
   color: @black-color;
   font-style: normal;
   font-size: 14px;
@@ -9,4 +10,44 @@
   text-transform: uppercase;
   background-color: @footer-color;
   border: 1px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 256px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    color: @black-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: @footer-color;
+    border: 1px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    color: @black-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: @footer-color;
+    border: 1px solid red;
+  }
 }
