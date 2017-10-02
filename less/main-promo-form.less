@@ -8,3 +8,33 @@
   background-size: 100% 26px, cover;
   border: 1px solid blue;
 }
+
+@media (min-width: @tablet-width) {
+  .main-promo-form {
+    width: 768px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+    background-color: @background-promo;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: center bottom, center -50px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 26px, cover;
+    border: 1px solid blue;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-promo-form {
+    width: 1200px;
+    height: 302px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: @background-promo;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: center bottom, center -50px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 26px, cover;
+    border: 1px solid blue;
+  }
+}
