@@ -31,28 +31,20 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 648px;
     min-height: 1420px;
-    margin: 0;
     padding-top: 20px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 40px;
-    background-color: @text-area;
-    border: 1px solid red;
 
     &__name {
-      width: 324px;
       min-height: 320px;
       margin: 0;
-      padding-top: 20px;
-      padding-bottom: 30px;
       padding-left: 0;
       padding-right: 0;
     }
 
     &__contacts {
-      width: 648px;
       min-height: 300px;
       margin: 0;
       padding-top: 20px;
@@ -62,17 +54,15 @@
     }
 
     &__details {
-      width: 324px;
       min-height: 320px;
       margin: 0;
       padding-top: 20px;
       padding-bottom: 30px;
       padding-left: 0;
-      padding-right: 0;
+      padding-right: 0
     }
 
     &__places {
-      width: 648px;
       min-height: 300px;
       margin: 0;
       padding-top: 20px;
@@ -82,7 +72,6 @@
     }
 
     &__emotions {
-      width: 648px;
       min-height: 300px;
       margin: 0;
       padding-top: 20px;
@@ -94,43 +83,21 @@
     &__button {
       width: 324px;
       margin: 0;
-      padding-top: 18px;
-      padding-bottom: 18px;
-      color: @white-color;
-      font-style: normal;
-      font-size: 21px;
-      line-height: 26px;
-      font-weight: bold;
-      text-transform: uppercase;
-      background-color: @navigation-color;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-review {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1200px;
     min-height: 1220px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 20px;
+    margin: 0;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 40px;
-    background-color: @text-area;
-    border: 1px solid red;
   }
 
   &__name {
-    width: 600px;
     min-height: 340px;
-    margin: 0;
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 0;
@@ -139,60 +106,27 @@
   }
 
   &__contacts {
-    width: 1200px;
     min-height: 205px;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
     order: 3;
   }
 
   &__details {
-    width: 600px;
     min-height: 340px;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
     order: 2;
   }
 
   &__places {
-    width: 1200px;
     min-height: 220px;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
     order: 4;
   }
 
   &__emotions {
-    width: 1200px;
     min-height: 320px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
     order: 5;
   }
 
   &__button {
     width: 480px;
-    margin: 0;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    color: @white-color;
-    font-style: normal;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: @navigation-color;
   }
 }
