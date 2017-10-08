@@ -1,5 +1,9 @@
 .hotel-interest {
+  margin: 0;
+  padding-top: 30px;
   padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: @black-color;
   text-align: center;
   background-color: @white-color;
@@ -33,5 +37,27 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: @navigation-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hotel-interest {
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__button {
+      width: 458px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel-interest {
+    min-height: 330px;
   }
 }

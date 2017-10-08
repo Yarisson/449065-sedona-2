@@ -1,6 +1,9 @@
 .photo-doubt {
+  margin: 0;
   padding-top: 12px;
   padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
   color: @black-color;
   text-align: center;
   background-color: @white-color;
@@ -22,5 +25,21 @@
     line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-doubt {
+    min-height: 245px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-doubt {
+    margin: 0;
   }
 }

@@ -1,5 +1,4 @@
 .main-promo-form {
-  width: 320px;
   height: 158px;
   background-color: @background-promo;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
@@ -7,4 +6,18 @@
   background-repeat: no-repeat, no-repeat;
   background-size: 100% 26px, cover;
   border: 1px solid blue;
+}
+
+@media (min-width: @tablet-width) {
+  .main-promo-form {
+    height: 292px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-promo-form {
+    height: 302px;
+  }
 }

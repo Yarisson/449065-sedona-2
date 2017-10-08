@@ -1,5 +1,6 @@
 .main-promo {
-  width: 320px;
+  margin: 0;
+  padding: 0;
   height: 389px;
   background-color: @background-promo;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
@@ -10,5 +11,17 @@
 
   &__image-wrapper {
     max-width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-promo {
+    height: 520px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-promo {
+    padding: 0;
   }
 }

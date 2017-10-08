@@ -1,6 +1,12 @@
 .page-footer {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
   color: @black-color;
   background-color: @footer-color;
+  border: 1px solid green;
 
   &__hashtag {
     font-style: normal;
@@ -9,5 +15,31 @@
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 0;
+
+    &__hashtag {
+      display: inline-block;
+      width: 256px;
+      margin: 0;
+      padding: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    &__hashtag {
+      width: 400px;
+    }
   }
 }
