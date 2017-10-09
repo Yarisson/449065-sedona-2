@@ -1,12 +1,25 @@
 .page-header {
   background-color: @white-color;
   border: 1px solid blue;
+
+  &__logo {
+    position: relative;
+    max-width: 100%;
+    width: 102px;
+    height: 56px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     &__logo {
-      order: 2;
+      display: none;
     }
   }
 }

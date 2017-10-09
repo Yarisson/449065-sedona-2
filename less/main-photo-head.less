@@ -1,6 +1,6 @@
 .main-photo-head {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 35px;
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
@@ -10,16 +10,18 @@
   border: 1px solid blue;
 
   &__caption {
+    margin: 0;
+    padding-bottom: 13px;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   &__text {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -32,15 +34,23 @@
   .main-photo-head {
     display: flex;
     flex-direction: column;
-    min-height: 250px;
     margin: 0 auto;
+      padding-top: 75px;
+      padding-bottom: 55px;
+      padding-left: 160px;
+      padding-right: 160px;
+
+      &__caption {
+        padding-bottom: 18px;
+        font-size: 30px;
+      }
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-photo-head {
-    min-height: 290px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 115px;
+    padding-left: 375px;
+    padding-right: 375px;
   }
 }

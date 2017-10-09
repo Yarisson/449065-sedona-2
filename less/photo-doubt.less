@@ -1,7 +1,7 @@
 .photo-doubt {
   margin: 0;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  padding-top: 38px;
+  padding-bottom: 36px;
   padding-left: 0;
   padding-right: 0;
   color: @black-color;
@@ -10,6 +10,8 @@
   border: 1px solid blue;
 
   &__caption {
+    margin: 0;
+    padding-bottom: 25px;
     font-style: normal;
     font-size: 18px;
     line-height: 24px;
@@ -18,8 +20,9 @@
   }
 
   &__text {
-    padding-left: 42px;
-    padding-right: 42px;
+    margin: 0;
+    padding-left: 38px;
+    padding-right: 38px;
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -30,16 +33,51 @@
 
 @media (min-width: @tablet-width) {
   .photo-doubt {
-    min-height: 245px;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 60px;
     margin-right: 60px;
+    padding-top: 48px;
+    padding-bottom: 75px;
+
+    &__caption {
+      margin: 0;
+      padding-bottom: 27px;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      margin: 0;
+      padding-left: 105px;
+      padding-right: 105px;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-doubt {
     margin: 0;
+    padding-top: 68px;
+
+    &__caption {
+      margin: 0;
+      padding-bottom: 32px;
+      font-size: 30px;
+    }
+
+    &__text {
+      margin: 0;
+      padding-left: 390px;
+      padding-right: 390px;
+    }
   }
 }
