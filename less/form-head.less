@@ -1,7 +1,7 @@
 .form-head {
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 35px;
+  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   color: @black-color;
@@ -10,17 +10,20 @@
   border: 1px solid green;
 
   &__caption {
+    margin: 0;
+    padding-bottom: 26px;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   &__text {
+    margin: 0;
     font-style: normal;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
   }
@@ -30,15 +33,23 @@
   .form-head {
     display: flex;
     flex-direction: column;
-    min-height: 205px;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 75px;
+    padding-bottom: 45px;
+    padding-left: 160px;
+    padding-right: 160px;
+
+    &__caption {
+      padding-bottom: 32px;
+      font-size: 30px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-head {
-    min-height: 240px;
+    padding-top: 115px;
+    padding-left: 375px;
+    padding-right: 375px;
   }
 }
