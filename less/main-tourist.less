@@ -1,39 +1,45 @@
 .main-tourist {
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 20px;
-  padding-right: 40px;
+  padding-right: 36px;
   color: @black-color;
   background-color: @white-color;
-  border: 1px solid blue;
 
   &__caption {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 50px;
     padding: 0;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   &__text {
-    margin: 0;
-    padding-left: 50px;
-    padding-right: 0;
+    margin-top: 12px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-right: 0;
+    padding: 0;
     font-style: normal;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     font-weight: normal;
     text-transform: uppercase;
   }
 
   &__icon {
-    margin: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
+    position: relative;
+    max-width: 100%;
+    width: 38px;
+    height: 38px;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 0;
   }
 }
 
@@ -41,32 +47,46 @@
   .main-tourist {
     width: 256px;
     margin: 0;
-    padding-top: 72px;
-    padding-bottom: 62px;
-    color: @black-color;
-    background-color: @white-color;
-    border: 1px solid blue;
+    padding: 0;
+
+    &--housing {
+      order: 0;
+    }
+
+    &--food {
+      order: 1;
+    }
+
+    &--souvenirs {
+      order: 2;
+    }
 
     &__caption {
-      padding-top: 25px;
-      padding-bottom: 20px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
       font-size: 21px;
       line-height: 26px;
       text-align: center;
     }
 
     &__text {
-      margin: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-      padding-left: 25px;
-      padding-right: 25px;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 62px;
+      margin-left: 45px;
+      margin-right: 45px;
       line-height: 22px;
       text-align: center;
     }
 
     &__icon {
       text-align: center;
+      margin-top: 60px;
+      margin-bottom: 32px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -74,19 +94,13 @@
 @media (min-width: @desktop-width) {
   .main-tourist {
     width: 400px;
-    margin: 0;
-    padding-top: 60px;
-    padding-bottom: 82px;
-    color: @black-color;
-    background-color: @white-color;
-    border: 1px solid blue;
 
     &__text {
       margin: 0;
       padding-top: 0;
-      padding-bottom: 0;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-bottom: 82px;
+      margin-left: 50px;
+      margin-right: 50px;
       text-align: center;
     }
   }

@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
   background-color: @white-color;
-  border: 1px solid red;
 
   &__decoration {
-    padding-top: 30px;
+    padding-top: 13px;
     padding-bottom: 25px;
     padding-left: 30px;
     padding-right: 30px;
@@ -21,13 +20,17 @@
       color: @white-color;
       background-color: @navigation-color;
     }
+
+    &--bridge {
+      padding-top: 22px;
+      padding-bottom: 40px;
+    }
   }
 
   &__caption {
-    margin: 0;
-    padding-bottom: 10px;
-    padding-left: 14px;
-    padding-right: 14px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    margin-right: 14px;
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
@@ -36,8 +39,8 @@
   }
 
   &__roster {
-    margin: 0;
-    padding-bottom: 11px;
+    margin-top: 0;
+    margin-bottom: 13px;
     font-style: normal;
     font-size: 14px;
     line-height: 20px;
@@ -63,49 +66,42 @@
 
     &__decoration {
       width: 256px;
-      padding-top: 47px;
-      padding-bottom: 50px;
-      padding-left: 60px;
-      padding-right: 60px;
+      padding: 0;
       margin: 0 auto;
 
       &--color {
-        box-sizing: border-box;
-        padding-top: 45px;
-        padding-bottom: 0;
-        padding-left: 45px;
-        padding-right: 45px;
+        padding: 0;
+      }
+
+      &--bridge {
+        padding: 0;
+        order: 2;
       }
     }
 
     &__caption {
-      padding-top: 0;
-      padding-bottom: 15px;
-      padding-left: 0;
-      padding-right: 0;
+      margin-top: 46px;
+      margin-bottom: 12px;
+      margin-left: 52px;
+      margin-right: 52px;
+      padding: 0;
       font-size: 21px;
       line-height: 24px;
     }
 
     &__roster {
-      margin: 0;
-      padding-bottom: 20px;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: normal;
-      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding: 0;
     }
 
     &__text {
-      margin: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 45px;
+      margin-right: 45px;
       padding-left: 0;
       padding-right: 0;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 22px;
-      font-weight: normal;
-      text-transform: uppercase;
     }
 
     &__image-wrapper {
@@ -122,27 +118,31 @@
   .main-reason {
     &__decoration {
       width: 400px;
-      padding-top: 52px;
-      padding-bottom: 58px;
-      padding-left: 61px;
-      padding-right: 61px;
+      pa
+      margin: 0;
 
       &--color {
-        box-sizing: border-box;
-        padding-top: 55px;
-        padding-bottom: 0;
-        padding-left: 65px;
-        padding-right: 65px;
+      }
+
+      &--bridge p {
+        margin-left: 90px;
+        margin-right: 90px;
       }
     }
 
     &__caption {
-      padding-top: 0;
-      padding-bottom: 15px;
-      padding-left: 59px;
-      padding-right: 59px;
+      margin-top: 52px;
+      margin-left: 124px;
+      margin-right: 124px;
       font-size: 21px;
       line-height: 24px;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 55px;
+      margin-right: 55px;
     }
 
     &__image-wrapper {
