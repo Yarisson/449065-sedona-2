@@ -46,77 +46,77 @@
   }
 }
 
-  @media (min-width: @tablet-width) {
-    .form-review {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+@media (min-width: @tablet-width) {
+  .form-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+
+    &__name {
+      width: 384px;
       margin: 0;
-      padding-top: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
       padding-left: 0;
       padding-right: 0;
-      padding-bottom: 40px;
+      order: 1;
+    }
 
-      &__name {
-        width: 384px;
-        margin: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-        order: 1;
-      }
+    &__contacts {
+      width: 768px;
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      order: 2;
+    }
 
-      &__contacts {
-        width: 768px;
-        margin: 0;
-        padding-top: 0;
-        padding-bottom: 20px;
-        padding-left: 0;
-        padding-right: 0;
-        order: 2;
-      }
+    &__details {
+      width: 384px;
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      order: 0;
+    }
 
-      &__details {
-        width: 384px;
-        margin: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-        order: 0;
-      }
+    &__places {
+      width: 768px;
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 30px;
+      padding-left: 0;
+      padding-right: 0;
+      order: 3;
+    }
 
-      &__places {
-        width: 768px;
-        margin: 0;
-        padding-top: 0;
-        padding-bottom: 30px;
-        padding-left: 0;
-        padding-right: 0;
-        order: 3;
-      }
+    &__emotions {
+      width: 768px;
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 30px;
+      padding-left: 0;
+      padding-right: 0;
+      order: 4;
+    }
 
-      &__emotions {
-        width: 768px;
-        margin: 0;
-        padding-top: 0;
-        padding-bottom: 30px;
-        padding-left: 0;
-        padding-right: 0;
-        order: 4;
-      }
-
-      &__button {
-        width: 324px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        margin-left: 60px;
-        margin-right: auto;
-        font-size: 18px;
-        order: 5;
-      }
+    &__button {
+      width: 324px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      margin-left: 60px;
+      margin-right: auto;
+      font-size: 18px;
+      order: 5;
+    }
   }
 }
 
