@@ -1,13 +1,14 @@
 .form-places {
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
   color: @black-color;
   background-color: @white-color;
   border: 1px solid orange;
 
   &__title {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 11px;
     padding-top: 20px;
-    padding-bottom: 25px;
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
@@ -26,24 +27,75 @@
   }
 
   &__text {
+    margin-left: 16px;
+    margin-bottom: 54px;
+  }
+
+&__row {
+  margin: 0;
+  padding: 0;
+}
+
+  &__row-bridge {
     margin: 0;
-    padding-left: 36px;
-    padding-bottom: 55px;
+    padding: 0;
+  }
+
+  &__row-park {
+  margin: 0;
+  padding: 0;
+  }
+
+  &__row-berg {
+  margin: 0;
+  padding: 0;
+  }
+
+  &__row-rocks {
+  margin: 0;
+  padding: 0;
   }
 }
 
+
+
 @media (min-width: @tablet-width) {
   .form-places {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 0;
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__row-bridge {
+      align-self: flex-end;
+      width: 384px;
+      order: 0;
+    }
+
+    &__row-park {
+      order: 2;
+      width: 384px;
+    }
+
+    &__row-berg {
+      width: 384px;
+      align-self: flex-start;
+      order: 1;
+    }
+
+    &__row-rocks {
+      width: 384px;
+      order: 3;
+    }
 
     &__title {
       margin: 0;
-      padding-top: 20px;
-      padding-bottom: 25px;
+      padding-top: 10px;
+      margin-bottom: 60px;
       padding-left: 186px;
       padding-right: 186px;
       font-size: 21px;
@@ -52,8 +104,44 @@
     &__text {
       display: inline-block;
       width: 384px;
-      margin: 0 auto;
-      padding-bottom: 65px;
+      margin-top: 0;
+      margin-left: 100px;
+      margin-right: auto;
+      margin-bottom: 60px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-places {
+    &__row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__row-bridge {
+    align-self: flex-end;
+    width: 300px;
+    order: 0;
+    }
+
+    &__row-park {
+    order: 2;
+    width: 300px;
+    }
+
+    &__row-berg {
+    width: 300px;
+    align-self: flex-start;
+    order: 1;
+    }
+
+    &__row-rocks {
+    width: 300px;
+    order: 3;
     }
   }
 }

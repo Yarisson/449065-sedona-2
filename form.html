@@ -62,9 +62,9 @@
 
     </section>
 
-    <form class="form-review" id="form-sedona" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="form-review" id="form-sedona" action="https://echo.htmlacademy.ru/" method="post" style="border: none">
 
-      <fieldset class="form-review__name form-name">
+      <fieldset class="form-review__name form-name" style="border: none">
 
         <legend class="form-name__title">Представьтесь:</legend>
 
@@ -85,7 +85,7 @@
 
       </fieldset>
 
-      <fieldset class="form-review__contacts form-contacts">
+      <fieldset class="form-review__contacts form-contacts" >
 
         <legend class="form-contacts__title">Контактная информация:</legend>
 
@@ -111,7 +111,7 @@
 
       </fieldset>
 
-      <fieldset class="form-review__details form-details">
+      <fieldset class="form-review__details form-details" style="border: none">
 
         <legend class="form-details__title">Ваше общее впечатление:</legend>
 
@@ -132,33 +132,45 @@
 
       </fieldset>
 
-      <fieldset class="form-review__places form-places">
+      <fieldset class="form-review__places form-places" style="border: none">
 
         <legend class="form-places__title">Посещенные достопримечательности:</legend>
 
-        <p class="form-places__text"><label class="form-places__label" for="diablo-bridge">
-          <input class="form-places__checkbox" type="checkbox" id="diablo-bridge" name="places" placeholder="Мост Дьявола" checked>
-          Мост Дьявола
-        </label></p>
+        <div class="form-places__row" >
 
+        <div class="form-places__row-bridge">
+          <p class="form-places__text"><label class="form-places__label" for="diablo-bridge">
+            <input class="form-places__checkbox" type="checkbox" id="diablo-bridge" name="places" placeholder="Мост Дьявола" checked>
+              Мост Дьявола
+            </label></p>
+        </div>
+
+      <div class="form-places__row-park">
         <p class="form-places__text"><label class="form-places__label" for="slide-park">
           <input class="form-places__checkbox" type="checkbox" id="slide-park" name="places" placeholder="Слайд-парк" checked>
           Слайд-парк
         </label></p>
+      </div>
 
+      <div class="form-places__row-berg">
         <p class="form-places__text"><label class="form-places__label" for="mountain">
           <input class="form-places__checkbox" type="checkbox" id="mountain" name="places" placeholder="Гора-Колокол">
           Гора-Колокол
         </label></p>
+      </div>
 
+      <div class="form-places__row-rocks">
         <p class="form-places__text"><label class="form-places__label" for="red-cliff">
           <input class="form-places__checkbox" type="checkbox" id="red-cliff" name="places" placeholder="Красные скалы" checked>
           Красные скалы
         </label></p>
+      </div>
+
+      </div>
 
       </fieldset>
 
-      <fieldset class="form-review__emotions emotions-form">
+      <fieldset class="form-review__emotions emotions-form" style="border: none">
 
         <legend class="emotions-form__title">Опишите свои эмоции:</legend>
 
