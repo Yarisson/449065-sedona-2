@@ -41,6 +41,11 @@
     text-transform: none;
   }
 
+&__row {
+  margin: 0;
+  padding: 0;
+}
+
   &__icon {
     position: relative;
 
@@ -100,8 +105,27 @@
     &__title {
       margin: 0;
       padding-top: 20px;
-      padding-bottom: 6px;
+      margin-bottom: 90px;
       font-size: 21px;
+    }
+
+    &__text {
+      margin-bottom: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+
+    &__input {
+      margin: 0;
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
     }
   }
 }
