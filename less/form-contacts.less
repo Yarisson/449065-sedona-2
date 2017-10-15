@@ -101,14 +101,15 @@
 @media (min-width: @desktop-width) {
   .form-contacts {
     &__title {
-      margin: 0;
-      padding-top: 20px;
+      margin: 0 auto;
+      padding-top: 0;
       margin-bottom: 90px;
       font-size: 21px;
     }
 
     &__text {
-      margin-left: auto;
+      width: 200px;
+      margin-left: 200px;
       margin-right: auto;
     }
 
@@ -121,7 +122,17 @@
     &__row {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
+    }
+
+    &--mail {
+      left: 668px;
+      bottom: 38px;
+    }
+
+    &--phone {
+      left: 0;
+      top: -40px;
     }
   }
 }

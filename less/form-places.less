@@ -111,18 +111,24 @@
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .form-places {
-    &__row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
 
+    &__title {
+      margin: 0;
+      padding-top: 10px;
+      margin-bottom: 60px;
+      padding-left: 286px;
+      padding-right: 286px;
+      font-size: 21px;
+    }
+
+    &__row {
       &--bridge {
         align-self: flex-end;
         width: 300px;
         order: 0;
+        padding-left: 10px;
       }
 
       &--park {
