@@ -43,6 +43,7 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: @navigation-color;
+    border: none;
   }
 }
 
@@ -50,13 +51,14 @@
   .hotel-interest {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    padding-top: 55px;
+    padding-bottom: 58px;
+    padding-left: 0;
+    padding-right: 0;
 
     &__caption {
-      margin-top: 98px;
+      margin-top: 0;
       margin-bottom: 17px;
-      font-style: normal;
       font-size: 30px;
       line-height: 22px;
     }
@@ -64,15 +66,14 @@
     &__text {
       margin-left: 165px;
       margin-right: 165px;
-      margin-bottom: 37px;
-      font-size: 14px;
+      margin-bottom: 40px;
       line-height: 26px;
     }
 
     &__button {
       width: 458px;
       margin-top: 0;
-      margin-bottom: 58px;
+      margin-bottom: 0;
       margin-left: auto;
       margin-right: auto;
     }
@@ -81,26 +82,23 @@
 
 @media (min-width: @desktop-width) {
   .hotel-interest {
-    margin: 0;
+    padding-top: 75px;
+    padding-bottom: 67px;
+    padding-left: 0;
+    padding-right: 0;
 
     &__caption {
-      margin-top: 122px;
+      margin-top: 0;
     }
 
     &__text {
       margin-left: 380px;
       margin-right: 380px;
-      margin-bottom: 42px;
-      font-size: 14px;
-      line-height: 26px;
+      margin-bottom: 45px;
     }
 
     &__button {
-      width: 458px;
-      margin-top: 0;
-      margin-bottom: 65px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 0;
     }
   }
 }

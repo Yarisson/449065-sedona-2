@@ -5,14 +5,35 @@
     background-color: @video-wrapper;
   }
 
-  &__repeat {
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 280px;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: @text-area;
   }
 
-  &__buttons {
-    background-color: @text-area;
+  &__repeat {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+
+  &__subtitles {
+    margin-right: 15px;
+    margin-left: auto;
+  }
+
+  &__screen {
+    margin-right: 16px;
+    margin-left: 0;
   }
 }
+
+
+
 
 @media (min-width: @tablet-width) {
   .video-presentation {
@@ -20,6 +41,28 @@
     margin-bottom: 0;
     margin-left: 60px;
     margin-right: 60px;
+  }
+
+  &__buttons {
+    justify-content: space-around;
+    width: 648px;
+    margin: 0;
+    border: 1px solid red;
+  }
+
+  &__repeat {
+    margin-right: auto;
+    margin-left: 24px;
+  }
+
+  &__subtitles {
+    margin-right: 15px;
+    margin-left: auto;
+  }
+
+  &__screen {
+    margin-right: 33px;
+    margin-left: 0;
   }
 }
 
