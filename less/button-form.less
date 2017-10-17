@@ -1,0 +1,53 @@
+.button-form {
+  margin: 0;
+
+  &__button {
+    width: 280px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @white-color;
+    background-color: @navigation-color;
+    border: none;
+}
+
+  &__text {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+      width: 324px;
+      margin: 0 auto;
+    }
+
+    &__text{
+      display: inline-block;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: normal;
+      color: @black-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button-form {
+    &__button {
+      width: 480px;
+    }
+  }
+}
