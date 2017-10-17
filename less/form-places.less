@@ -42,6 +42,7 @@
   }
 
   &__checkbox + &__label &__checkbox-checked {
+    display: none;
     position: absolute;
     top: 50%;
     left: 0;
@@ -57,10 +58,6 @@
 
   &__checkbox:checked + &__label &__checkbox-checked {
     display: inline-block;
-  }
-
-  &__checkbox + &__label &__checkbox-checked {
-    display: none;
   }
 
   &__row {
