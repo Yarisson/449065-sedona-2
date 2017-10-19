@@ -109,21 +109,34 @@
     }
 
     &__text {
-      width: 200px;
-      margin-left: 200px;
-      margin-right: auto;
+      display: inline-block;
+      width: 165px;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+    }
+
+    &__label {
+      width: 150px;
+      margin-left: 80px;
+      padding: 0;
     }
 
     &__input {
-      margin: 0;
+      flex: 1 1 auto;
       padding-top: 0;
       margin-bottom: 10px;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      width: 142px;
     }
 
     &__row {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-around;
+      box-sizing: border-box;
     }
 
     &--mail {
