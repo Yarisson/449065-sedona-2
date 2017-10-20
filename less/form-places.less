@@ -27,7 +27,7 @@
   }
 
   &__text {
-    margin-left: 16px;
+    margin-left: 36px;
     margin-bottom: 54px;
   }
 
@@ -38,7 +38,7 @@
   &__checkbox + &__label {
     position: relative;
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 60px;
   }
 
   &__checkbox + &__label &__checkbox-checked {
@@ -93,35 +93,40 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: flex-start;
 
       &--bridge {
         align-self: flex-end;
-        width: 384px;
+        width: 180px;
         order: 0;
+        padding-left: 10px;
+        margin-left: 60px;
       }
 
       &--park {
         order: 2;
-        width: 384px;
+        width: 180px;
+        margin-left: 75px;
       }
 
       &--berg {
-        width: 384px;
+        width: 180px;
         align-self: flex-start;
         order: 1;
+        margin-left: 85px;
       }
 
       &--rocks {
-        width: 384px;
+        width: 180px;
         order: 3;
+        margin-left: 75px;
       }
     }
 
     &__title {
       margin: 0;
       padding-top: 10px;
-      margin-bottom: 60px;
+      margin-bottom: 55px;
       padding-left: 186px;
       padding-right: 186px;
       font-size: 21px;
@@ -129,7 +134,7 @@
 
     &__text {
       display: inline-block;
-      width: 384px;
+      width: 180px;
       margin-top: 0;
       margin-left: 100px;
       margin-right: auto;
@@ -145,33 +150,43 @@
       margin: 0;
       padding-top: 10px;
       margin-bottom: 60px;
-      padding-left: 286px;
-      padding-right: 286px;
+      padding-left: 460px;
+      padding-right: 460px;
       font-size: 21px;
     }
 
+    &__text {
+      width: 384px;
+    }
+
     &__row {
+justify-content: flex-start;
+
       &--bridge {
         align-self: flex-end;
-        width: 300px;
+        width: 180px;
         order: 0;
         padding-left: 10px;
+        margin-left: 30px;
       }
 
       &--park {
         order: 2;
-        width: 300px;
+        width: 180px;
+        margin-left: 75px;
       }
 
       &--berg {
-        width: 300px;
+        width: 180px;
         align-self: flex-start;
         order: 1;
+        margin-left: 75px;
       }
 
       &--rocks {
-        width: 300px;
+        width: 180px;
         order: 3;
+        margin-left: 65px;
       }
     }
   }

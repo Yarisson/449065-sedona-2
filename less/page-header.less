@@ -3,7 +3,7 @@
 
   &__logo {
     position: relative;
-    max-width: 100%;
+    width: 100%;
     width: 102px;
     height: 56px;
     margin-top: 0;
@@ -18,7 +18,18 @@
     width: 100%;
 
     &__logo {
-      margin: 0 -440px;
+      position: relative;
+      width: 26px;
+      height: 56px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__logo-image {
+      position: absolute;
+      left: -407px;
     }
   }
 }
@@ -27,8 +38,9 @@
   .page-header {
     width: 100%;
 
-    &__logo {
-      margin: 0 -569px;
+    &__logo-image {
+      position: absolute;
+      left: -650px;
     }
   }
 }
