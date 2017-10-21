@@ -5,7 +5,7 @@
   border: 1px solid orange;
 
   &__title {
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 22px;
     font-style: normal;
     font-size: 18px;
@@ -29,6 +29,7 @@
     line-height: 26px;
     font-weight: normal;
     text-transform: uppercase;
+    color: @form-text;
   }
 
   &__input {
@@ -77,25 +78,29 @@
       font-size: 21px;
     }
 
+    &__label {
+      color: @form-text;
+    }
+
     &__text {
       margin-left: 82px;
       padding: 0;
     }
 
     &__input {
-      padding-top: 20px;
+      padding-top: 0;
       margin-bottom: 10px;
     }
 
     &__icon-image {
       &--mail {
-        left: 88%;
-        top: -55px;
+        left: 87%;
+        top: -60px;
       }
 
       &--phone {
-        left: 88%;
-        top: -55px;
+        left: 87%;
+        top: -60px;
       }
     }
   }
@@ -147,6 +152,10 @@
       margin-right: 80px;
     }
 
+    &__row p:nth-child(5) {
+      margin-left: 20px;
+    }
+
     &__icon {
       position: relative;
     }
@@ -155,7 +164,7 @@
       position: absolute;
 
       &--mail {
-        left: 95px;
+        left: 90px;
         top: 5px;
       }
 

@@ -17,7 +17,7 @@
   }
 
   &__label {
-    margin-left: 37px;
+    margin-left: -20px;
     font-style: normal;
     font-size: 18px;
     line-height: 26px;
@@ -29,6 +29,35 @@
     margin-top: 0;
     margin-bottom: 42px;
   }
+
+  &__radio {
+display: none;
+}
+
+  &__radio + &__label {
+  position: relative;
+  display: inline-block;
+  padding-left: 60px;
+}
+
+  &__radio + &__label &__radio-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  display: none;
+  vertical-align: -9px;
+}
+
+  &__radio-icon {
+    display: none;
+  width: 23px;
+  height: 23px;
+}
+
+&__radio:checked + &__label &__radio-icon {
+   display: inline-block;
+ }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,7 +74,7 @@
 
     &__text {
       margin-bottom: 35px;
-      margin-left: 45px;
+      margin-left: 100px;
       padding-top: 15px;
     }
   }
@@ -65,7 +94,7 @@
 
     &__text {
       margin-bottom: 35px;
-      margin-left: 100px;
+      margin-left: 160px;
     }
   }
 }
