@@ -5,6 +5,18 @@
   background-position: center bottom, center -50px;
   background-repeat: no-repeat, no-repeat;
   background-size: 100% 26px, cover;
+
+  &__wrapper-image {
+    max-width: 100%;
+  }
+
+  &__image {
+    width: 230px;
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-right: 20px;
+    text-align: center;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -12,11 +24,23 @@
     height: 292px;
     margin: 0;
     padding: 0;
+
+    &__image {
+      width: 455px;
+      padding-top: 97px;
+      padding-left: 155px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-promo-form {
     height: 302px;
+
+    &__image {
+      width: 460px;
+      padding-top: 104px;
+      padding-left: 368px;
+    }
   }
 }

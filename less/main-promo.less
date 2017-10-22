@@ -4,7 +4,7 @@
   height: 389px;
   background-color: @background-promo;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: center bottom, center -50px;
+  background-position: center bottom, center 0;
   background-repeat: no-repeat, no-repeat;
   background-size: 100% 26px, cover;
 
@@ -12,11 +12,25 @@
     max-width: 100%;
     text-align: center;
   }
+
+  &__image {
+    width: 280px;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-promo {
     height: 520px;
+  }
+
+  &__image {
+    width: 100%;
+    padding-top: 75px;
+    text-align: center;
   }
 }
 
